@@ -7,9 +7,9 @@ const Register = () => {
       <form action="">
         <input type="text" placeholder="Your Name" />
         <br />
-        <input type="email" placeholder="Your Email" name="" id="" />
+        <input type="email" placeholder="Your Email" />
         <br />
-        <input type="password" placeholder="Your Password" name="" id="" />
+        <input type="password" placeholder="Your Password" />
         <br />
         <input type="submit" value="Register" />
       </form>

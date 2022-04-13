@@ -9,7 +9,7 @@ import {
 import app from "../firebase.init";
 
 const auth = getAuth(app);
-const googlePorvider = new GoogleAuthProvider();
+const googleProvider = new GoogleAuthProvider();
 
 const useFirebase = () => {
   const [user, setUser] = useState({});
@@ -24,7 +24,7 @@ const useFirebase = () => {
     });
   }, []);
   const signInWithGoogle = () => {
-    signInWithPopup(auth, googlePorvider).then((result) => {
+    signInWithPopup(auth, googleProvider).then((result) => {
       const user = result.user;
       setUser(user);
       console.log(user);
